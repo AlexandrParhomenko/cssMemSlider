@@ -15,6 +15,9 @@ body {
 main {
     max-width: 1280px;
     width: 100%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
 }
 .slider-block {
     display: flex;
@@ -108,6 +111,22 @@ input {
     margin-left: -300%;
 }
 
-#switch5:checked ~ #slides .image{
-    margin-left: -400%;
+#slides .image{
+    transition: all 800ms;
+}
+#switch1:checked ~ button:nth-child(1),
+#switch2:checked ~ button:nth-child(2),
+#switch3:checked ~ button:nth-child(3),
+#switch4:checked ~ button:nth-child(4){
+    border: 1px solid #099dde;
+    background-color: #d5d5d5;
+}
+#active button:hover{
+    background: #f1f1f1;
+    border-color: #f1f1f1;
+}
+.button-wrapper:hover .button {
+    background: #f1f1f1;
+    border-color: #f1f1f1;
+    transition: 0.3s;
 }
