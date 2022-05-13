@@ -22,7 +22,7 @@ main {
 
 img {
     height: 35em;
-    max-width: 70em;
+    max-width: 7%;
     width: 100%;
 }
 
@@ -89,13 +89,13 @@ input {
 }
 
 #slides .image {
-    width: 1500%;
+    width: 1430%;
     line-height: 0;
 }
 
 .text {
     justify-content: space-between;
-    width: 500%;
+    width: 1500%;
     flex-direction: row;
     overflow: hidden;
     height: 20px;
@@ -159,7 +159,7 @@ label {
 }
 
 #switch2:checked ~ #slides .image {
-    margin-left: -100%;
+    margin-left: -100.5%;
 }
 
 #switch3:checked ~ #slides .image {
@@ -167,7 +167,7 @@ label {
 }
 
 #switch4:checked ~ #slides .image {
-    margin-left: -301%;
+    margin-left: -301.5%;
 }
 
 #switch1:checked ~ .container #text .text {
