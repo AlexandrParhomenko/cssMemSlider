@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Meme-slider</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main>
+   <div class="slider-block">
+       <input checked type="radio" name="respond" id="desktop">
+       <div class="slider-block__image-wrapper">
+           <input checked type="radio" name="slider" id="switch1">
+           <input type="radio" name="slider" id="switch2">
+           <input type="radio" name="slider" id="switch3">
+           <input type="radio" name="slider" id="switch4">
+           <div id="slides">
+               <div class="overflow">
+                   <div class="image">
+                       <img class="slider-block__image-wrapper__content" src=img/AoT.png height=500 width=800>
+                       <img class="slider-block__image-wrapper__content" src=img/mad.jpg height=500 width=800>
+                       <img class="slider-block__image-wrapper__content" src=img/mcq.jpg height=500 width=800>
+                       <img class="slider-block__image-wrapper__content" src=img/numbers.jpg height=500 width=800>
+                   </div>
+               </div>
+           </div>
+           <div class="slider-block__image-wrapper__bottom-content">
+               <span class="slider-block__text">Train hard</span>
+               <div class="slider-block__buttons-wrapper">
+                   <div class="button-wrapper"><label for="switch1" class="button active"></label></div>
+                   <div class="button-wrapper"><label for="switch2" class="button"></label></div>
+                   <div class="button-wrapper"><label for="switch3" class="button"></label></div>
+                   <div class="button-wrapper"><label for="switch4" class="button"></label></div>
+               </div>
+           </div>
+       </div>
+   </div>
+</main>
+</body>
+</html>

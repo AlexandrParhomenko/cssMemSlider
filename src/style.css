@@ -1,0 +1,113 @@
+* {
+    box-sizing: border-box;
+    text-decoration: none;
+}
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 1280px;
+    width: 100%;
+    margin: auto;
+    overflow-x: hidden;
+    justify-content: center;
+}
+main {
+    max-width: 1280px;
+    width: 100%;
+}
+.slider-block {
+    display: flex;
+    max-width: 883px;
+    width: 100%;
+    background-color: #151515;
+    border-radius: 5px;
+    justify-content: center;
+    padding: 20px 20px;
+}
+.slider-block__image-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px 20px;
+    display: flex;
+    background-color: #838080;
+    border-radius: 10px;
+}
+.slider-block__image-wrapper__content {
+    border-radius: 10px;
+}
+.slider-block__image-wrapper__bottom-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 10px;
+}
+.button-wrapper {
+    height: 40px;
+    width: 40px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    cursor: pointer;
+}
+.slider-block__buttons-wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.slider-block__text {
+    align-items: center;
+    font-family: Georgia, serif;
+    font-size: 17px;
+}
+.button {
+    cursor: pointer;
+    background-color: #099dde;
+    text-decoration: none;
+    height: 16px;
+    width: 16px;
+    border-radius: 100px;
+    border: 1px solid #099dde;
+ }
+input {
+    display: none;
+}
+.button.active {
+    border: 1px solid #099dde;
+    background-color: #d5d5d5;
+}
+.overflow {
+    width: 100%;
+    overflow: hidden;
+}
+#slides .image{ /*устанавливает общий размер блока с изображениями*/
+    width: 500%;
+    line-height: 0;
+}
+.manual-nav {
+    position: absolute;
+    width: 800px;
+    margin-top: -40px;
+    display: flex;
+}
+#switch1:checked ~ #slides .image{
+    margin-left: 0;
+}
+
+#switch2:checked ~ #slides .image{
+    margin-left: -100%;
+}
+
+#switch3:checked ~ #slides .image{
+    margin-left: -200%;
+}
+
+#switch4:checked ~ #slides .image{
+    margin-left: -300%;
+}
+
+#switch5:checked ~ #slides .image{
+    margin-left: -400%;
+}
