@@ -7,16 +7,12 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    max-width: 1280px;
-    width: 100%;
     margin: auto;
     overflow-x: hidden;
     justify-content: center;
 }
 
 main {
-    max-width: 1280px;
-    width: 100%;
     justify-content: center;
     align-items: center;
     display: flex;
@@ -24,27 +20,27 @@ main {
 
 .slider-block {
     display: flex;
-    max-width: 883px;
+    max-width: 75em;
     width: 100%;
     background-color: #151515;
     border-radius: 5px;
     justify-content: center;
-    padding: 20px 20px;
+    padding: 1em 1em;
 }
 
 .slider-block__image-wrapper {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 20px 20px;
+    padding: 1em 1em;
     background-color: #838080;
-    border-radius: 10px;
-    max-width: 883px;
+    border-radius: 1em;
+    max-width: 75em;
     width: 100%;
 }
 
 .slider-block__image-wrapper__content {
-    border-radius: 10px;
+    border-radius: 1em;
 }
 
 .slider-block__image-wrapper__bottom-content {
@@ -52,16 +48,7 @@ main {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    padding-top: 10px;
-}
-
-.button-wrapper {
-    height: 40px;
-    width: 40px;
-    justify-content: center;
-    align-items: center;
-    display: flex;
-    cursor: pointer;
+    padding-top: 1em;
 }
 
 .slider-block__buttons-wrapper {
@@ -74,19 +61,8 @@ main {
     align-items: center;
     font-family: Georgia, serif;
     font-size: 17px;
-    padding-right: 43em;
+    padding-right: 61em;
 }
-
-.button {
-    cursor: pointer;
-    background-color: #099dde;
-    text-decoration: none;
-    height: 16px;
-    width: 16px;
-    border-radius: 100px;
-    border: 1px solid #099dde;
-}
-
 input {
     display: none;
 }
@@ -101,7 +77,7 @@ input {
     overflow: hidden;
 }
 #slides {
-    max-width: 883px;
+    max-width: 70em;
     width: 100%;
 }
 #slides .image { /*устанавливает общий размер блока с изображениями*/
@@ -118,12 +94,18 @@ input {
 
 .text {
     justify-content: space-between;
-    width: 3500px;
+    width: 500%;
     flex-direction: row;
     overflow: hidden;
     height: 20px;
 }
-
+.container {
+    max-width: 70em;
+    width: 100%;
+    flex-direction: row;
+    display: flex;
+    justify-content: space-between;
+}
 #text {
     padding: 20px 0;
     overflow: hidden;
@@ -138,27 +120,27 @@ input {
 }
 
 #switch3:checked ~ #slides .image {
-    margin-left: -200%;
+    margin-left: -201%;
 }
 
 #switch4:checked ~ #slides .image {
-    margin-left: -300%;
+    margin-left: -301%;
 }
 
-#switch1:checked ~ #text .text {
+#switch1:checked ~ .container #text .text {
     margin-left: 0;
 }
 
-#switch2:checked ~ #text .text {
-    margin-left: -51em;
+#switch2:checked ~ .container #text .text {
+    margin-left: -70em;
 }
 
-#switch3:checked ~ #text .text {
-    margin-left: -114em;
+#switch3:checked ~ .container #text .text {
+    margin-left: -152em;
 }
 
-#switch4:checked ~ #text .text {
-    margin-left: -164em;
+#switch4:checked ~ .container #text .text {
+    margin-left: -221em;
 }
 
 #text .text {
@@ -171,6 +153,8 @@ input {
 
 #active {
     column-gap: 10px;
+    max-width: 10em;
+    width: 100%;
 }
 
 #active:hover {
@@ -190,10 +174,10 @@ input {
     border-color: #f1f1f1;
 }
 
-#switch1:checked ~ #active label:nth-child(1),
-#switch2:checked ~ #active label:nth-child(2),
-#switch3:checked ~ #active label:nth-child(3),
-#switch4:checked ~ #active label:nth-child(4) {
+#switch1:checked ~ .container #active label:nth-child(1),
+#switch2:checked ~ .container #active label:nth-child(2),
+#switch3:checked ~ .container #active label:nth-child(3),
+#switch4:checked ~ .container #active label:nth-child(4) {
     border: 2px solid #099dde;
     background-color: #d5d5d5;
 }
