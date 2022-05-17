@@ -220,13 +220,13 @@ label {
     border: 2px solid #099dde;
     background-color: #d5d5d5;
 }
+
 #switch1:checked ~ .container #active .label-wrapper .button:nth-child(1):hover,
 #switch2:checked ~ .container #active .label-wrapper1 .button:nth-child(1):hover,
 #switch3:checked ~ .container #active .label-wrapper2 .button:nth-child(1):hover,
 #switch4:checked ~ .container #active .label-wrapper3 .button:nth-child(1):hover {
     background-color: #2252f3;
 }
-
 
 .button {
     height: 1em;
