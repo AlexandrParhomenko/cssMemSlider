@@ -293,7 +293,7 @@ label {
         max-width: 21em;
     }
     #switch2:checked ~ .container #text .text {
-        margin-left: -67em;
+        margin-left: -61em;
     }
 
     #switch3:checked ~ .container #text .text {
@@ -317,8 +317,15 @@ label {
     .slider-block__text {
         font-size: 15px;
     }
+    #text {
+        order: 2;
+        padding-top: 10px;
+    }
+    #active {
+        order: 1;
+        padding-top: 10px;
+    }
     .text {
         width: 1350%;
-        padding-left: 120px;
     }
 }
