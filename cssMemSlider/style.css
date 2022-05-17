@@ -293,7 +293,7 @@ label {
         max-width: 21em;
     }
     #switch2:checked ~ .container #text .text {
-        margin-left: -61em;
+        margin-left: -67em;
     }
 
     #switch3:checked ~ .container #text .text {
@@ -319,5 +319,6 @@ label {
     }
     .text {
         width: 1350%;
+        padding-left: 120px;
     }
 }
