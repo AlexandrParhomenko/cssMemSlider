@@ -294,15 +294,15 @@ label {
         max-width: 21em;
     }
     #switch2:checked ~ .container #text .text {
-        margin-left: -61em;
+        margin-left: -65.5em;
     }
 
     #switch3:checked ~ .container #text .text {
-        margin-left: -134em;
+        margin-left: -143em;
     }
 
     #switch4:checked ~ .container #text .text {
-        margin-left: -195em;
+        margin-left: -208em;
     }
     #switch2:checked ~ #slides .image {
         margin-left: -101%;
@@ -327,6 +327,6 @@ label {
         padding-top: 1em;
     }
     .text {
-        width: 1350%;
+        width: 1406%;
     }
 }
